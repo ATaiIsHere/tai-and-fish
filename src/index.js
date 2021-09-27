@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './css/App.css';
+import './css/index.css';
 import reportWebVitals from './reportWebVitals';
+import TopBlock from './component/TopBlock'
+import MidBlock from './component/MidBlock'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TopBlock />
+    <MidBlock />
+    <TopBlock />
   </React.StrictMode>,
   document.getElementById('root')
 );
