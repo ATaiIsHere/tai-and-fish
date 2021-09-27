@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/tai-and-fish/static/css/main.a617e044.chunk.css",
-    "main.js": "/tai-and-fish/static/js/main.fb736a8c.chunk.js",
-    "main.js.map": "/tai-and-fish/static/js/main.fb736a8c.chunk.js.map",
-    "runtime-main.js": "/tai-and-fish/static/js/runtime-main.d67a94a6.js",
-    "runtime-main.js.map": "/tai-and-fish/static/js/runtime-main.d67a94a6.js.map",
-    "static/js/2.2b1a0b29.chunk.js": "/tai-and-fish/static/js/2.2b1a0b29.chunk.js",
-    "static/js/2.2b1a0b29.chunk.js.map": "/tai-and-fish/static/js/2.2b1a0b29.chunk.js.map",
-    "static/js/3.b8480a0f.chunk.js": "/tai-and-fish/static/js/3.b8480a0f.chunk.js",
-    "static/js/3.b8480a0f.chunk.js.map": "/tai-and-fish/static/js/3.b8480a0f.chunk.js.map",
+    "main.css": "/tai-and-fish/static/css/main.02e642a3.chunk.css",
+    "main.js": "/tai-and-fish/static/js/main.de98d16a.chunk.js",
+    "main.js.map": "/tai-and-fish/static/js/main.de98d16a.chunk.js.map",
+    "runtime-main.js": "/tai-and-fish/static/js/runtime-main.bc1e9c31.js",
+    "runtime-main.js.map": "/tai-and-fish/static/js/runtime-main.bc1e9c31.js.map",
+    "static/js/2.36c37aa6.chunk.js": "/tai-and-fish/static/js/2.36c37aa6.chunk.js",
+    "static/js/2.36c37aa6.chunk.js.map": "/tai-and-fish/static/js/2.36c37aa6.chunk.js.map",
+    "static/js/3.aac32048.chunk.js": "/tai-and-fish/static/js/3.aac32048.chunk.js",
+    "static/js/3.aac32048.chunk.js.map": "/tai-and-fish/static/js/3.aac32048.chunk.js.map",
     "index.html": "/tai-and-fish/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/tai-and-fish/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.2b1a0b29.chunk.js.LICENSE.txt": "/tai-and-fish/static/js/2.2b1a0b29.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/tai-and-fish/static/media/logo.6ce24c58.svg"
+    "static/css/main.02e642a3.chunk.css.map": "/tai-and-fish/static/css/main.02e642a3.chunk.css.map",
+    "static/js/2.36c37aa6.chunk.js.LICENSE.txt": "/tai-and-fish/static/js/2.36c37aa6.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/tai-and-fish/static/media/top_bg.771af8b3.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d67a94a6.js",
-    "static/js/2.2b1a0b29.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.fb736a8c.chunk.js"
+    "static/js/runtime-main.bc1e9c31.js",
+    "static/js/2.36c37aa6.chunk.js",
+    "static/css/main.02e642a3.chunk.css",
+    "static/js/main.de98d16a.chunk.js"
   ]
 }
