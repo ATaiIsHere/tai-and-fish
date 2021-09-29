@@ -11,7 +11,6 @@ const LeftTimeDisplay = (props) => {
   const [secs, setSecs] = useState(0);
 
   useEffect(() => {
-    console.log(secs);
     let repeat = setInterval(
       () => {
         let now = new Date();
@@ -33,7 +32,7 @@ const LeftTimeDisplay = (props) => {
       clearInterval(repeat);
     }
     
-  }, []);
+  }, [props.target]);
 
   return (
     <div className="lefttime-display">
