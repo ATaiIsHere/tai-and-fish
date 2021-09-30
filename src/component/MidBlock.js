@@ -1,5 +1,6 @@
+import PageBlock from "./PageBlock";
 const MidBlock = () => {
-  return <div className="mid-block"></div>;
+  return <PageBlock class="mid-block"></PageBlock>;
 }
 
 export default MidBlock;

@@ -3,15 +3,10 @@ import ReactDOM from 'react-dom';
 import './css/App.css';
 import './css/index.css';
 import reportWebVitals from './reportWebVitals';
-import TopBlock from './component/TopBlock'
-import MidBlock from './component/MidBlock'
+import APP from './app';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <TopBlock />
-    <MidBlock />
-    <TopBlock />
-  </React.StrictMode>,
+  <APP />,
   document.getElementById('root')
 );
 
