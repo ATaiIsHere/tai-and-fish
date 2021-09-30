@@ -4,15 +4,7 @@ import logo from "../img/logo.svg";
 import { useState } from "react";
 import PageBlock from "./PageBlock";
 
-const getPageHeight = () => document.body.offsetHeight;
-
 const TopBlock = () => {
-  const [pageHeight, setPageHeight] = useState(getPageHeight());
-
-  let changeBlockHeight = () => setPageHeight(getPageHeight());
-
-  window.addEventListener("resize", changeBlockHeight);
-
   return (
     <PageBlock class="top-block">
       <img className="logo" src={logo} alt="logo" />

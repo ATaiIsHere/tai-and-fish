@@ -1,5 +1,3 @@
-import LeftTimeDisplay from "./LeftTimeDisplay";
-import logo from "../img/logo.svg";
 import { useState } from "react";
 
 const getPageHeight = () => window.innerHeight;
