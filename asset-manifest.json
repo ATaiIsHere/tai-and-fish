@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tai-and-fish/static/css/main.da56219a.chunk.css",
-    "main.js": "/tai-and-fish/static/js/main.1b5e9591.chunk.js",
-    "main.js.map": "/tai-and-fish/static/js/main.1b5e9591.chunk.js.map",
+    "main.js": "/tai-and-fish/static/js/main.bc163d3d.chunk.js",
+    "main.js.map": "/tai-and-fish/static/js/main.bc163d3d.chunk.js.map",
     "runtime-main.js": "/tai-and-fish/static/js/runtime-main.4bb93bfd.js",
     "runtime-main.js.map": "/tai-and-fish/static/js/runtime-main.4bb93bfd.js.map",
     "static/js/2.986c1608.chunk.js": "/tai-and-fish/static/js/2.986c1608.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.4bb93bfd.js",
     "static/js/2.986c1608.chunk.js",
     "static/css/main.da56219a.chunk.css",
-    "static/js/main.1b5e9591.chunk.js"
+    "static/js/main.bc163d3d.chunk.js"
   ]
 }
