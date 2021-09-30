@@ -1,7 +1,6 @@
 import React from "react";
 import LeftTimeDisplay from "./LeftTimeDisplay";
 import logo from "../img/logo.svg";
-import { useState } from "react";
 import PageBlock from "./PageBlock";
 
 const TopBlock = () => {
