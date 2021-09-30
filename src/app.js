@@ -1,22 +1,68 @@
-// import React, { useState } from "react";
+import React, { useState } from "react";
 import "./css/App.css";
 import "./css/index.css";
 import TopBlock from "./component/TopBlock";
 import MidBlock from "./component/MidBlock";
 
 const APP = () => {
-  // const [scrollPosition, setScrollPosition] = useState(0);
+  const [currentPage, setCurrentPage] = useState(0);
 
-  // const changePage = () => {
-  //   window.removeEventListener("scroll", changePage);
-  //   let currentScrollPosition = ;
-  //   let currentPageHeight = window.innerHeight;
+  let preScrollTop = 0;
+  let activeInterval = null;
 
-  //   let goPage = Math.ceil(currentScrollPosition / currentPageHeight);
-  //   document.documentElement.scrollTop = goPage * currentPageHeight;
-  // };
+  const runStopChecker = () => {
+    if (activeInterval === null) {
+      const scrollStopChecker = setInterval(() => {
+        if (document.documentElement.scrollTop === preScrollTop) {
+          if (document.documentElement.scrollTop % window.innerHeight !== 0) {
+            changePage(currentPage);
+          } else {
+            clearInterval(scrollStopChecker);
+            activeInterval = null;
+            console.log("scroll stop");
+            runChangeChecker();
+          }
+        }
 
-  // window.addEventListener("scroll", changePage);
+        console.log("...");
+        preScrollTop = document.documentElement.scrollTop;
+      }, 100);
+
+      activeInterval = scrollStopChecker;
+    }
+  };
+
+  const runChangeChecker = () => {
+    if (activeInterval === null) {
+      const scrollChangeChecker = setInterval(() => {
+        if (document.documentElement.scrollTop !== preScrollTop) {
+          let page = currentPage;
+
+          if (document.documentElement.scrollTop > preScrollTop) {
+            page += 1;
+          } else {
+            page -= 1;
+          }
+          setCurrentPage(page);
+          changePage(page);
+
+          clearInterval(scrollChangeChecker);
+          console.log("scroll");
+          runStopChecker();
+        }
+        console.log("...");
+        preScrollTop = document.documentElement.scrollTop;
+      }, 100);
+
+      activeInterval = scrollChangeChecker;
+    }
+  };
+
+  const changePage = (page) => {
+    document.documentElement.scrollTop = page * window.innerHeight;
+  };
+
+  runStopChecker();
 
   return (
     <div id="app">
