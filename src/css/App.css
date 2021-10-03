@@ -1,5 +1,6 @@
 #app {
   height: 100%;
+  /* overflow: scroll; */
 }
 
 .logo {
@@ -7,6 +8,7 @@
   top: 20px;
   left: 20px;
   width: 200px;
+  z-index: 99;
 }
 
 .page-block {

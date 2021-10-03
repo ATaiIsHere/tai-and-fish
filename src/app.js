@@ -1,71 +1,77 @@
-import React, { useState } from "react";
+import logo from "./img/logo.svg";
 import "./css/App.css";
 import "./css/index.css";
 import TopBlock from "./component/TopBlock";
 import MidBlock from "./component/MidBlock";
 
 const APP = () => {
-  const [currentPage, setCurrentPage] = useState(0);
+  let currentPage = 0;
+  let lastScrollDirection;
+  let prevScrollPosition = document.documentElement.scrollTop;
 
-  let preScrollTop = 0;
-  let activeInterval = null;
-
-  const runStopChecker = () => {
-    if (activeInterval === null) {
-      const scrollStopChecker = setInterval(() => {
-        if (document.documentElement.scrollTop === preScrollTop) {
-          if (document.documentElement.scrollTop % window.innerHeight !== 0) {
-            changePage(currentPage);
-          } else {
-            clearInterval(scrollStopChecker);
-            activeInterval = null;
-            console.log("scroll stop");
-            runChangeChecker();
-          }
-        }
-
-        console.log("...");
-        preScrollTop = document.documentElement.scrollTop;
-      }, 100);
-
-      activeInterval = scrollStopChecker;
+  const WheelListener = (event) => {
+    if (event.deltaY > 0) {
+      lastScrollDirection = 'down';
+    } else {
+      lastScrollDirection = 'up';
     }
   };
 
-  const runChangeChecker = () => {
-    if (activeInterval === null) {
-      const scrollChangeChecker = setInterval(() => {
-        if (document.documentElement.scrollTop !== preScrollTop) {
-          let page = currentPage;
+  let startY = null;
 
-          if (document.documentElement.scrollTop > preScrollTop) {
-            page += 1;
-          } else {
-            page -= 1;
-          }
-          setCurrentPage(page);
-          changePage(page);
+  const TouchStartListener = (event) => {
+    startY = event.changedTouches[0].pageY;
+  };
 
-          clearInterval(scrollChangeChecker);
-          console.log("scroll");
-          runStopChecker();
-        }
-        console.log("...");
-        preScrollTop = document.documentElement.scrollTop;
-      }, 100);
-
-      activeInterval = scrollChangeChecker;
+  const TouchEndListener = (event) => {
+    let endY = event.changedTouches[0].pageY;
+    if (endY - startY > 0) {
+      lastScrollDirection = 'up';
+    } else if (startY - endY > 0) {
+      lastScrollDirection = 'down';
     }
   };
 
-  const changePage = (page) => {
-    document.documentElement.scrollTop = page * window.innerHeight;
+  setInterval(() => {
+    if (prevScrollPosition === document.documentElement.scrollTop) {
+      document.documentElement.scrollTop = currentPage * window.innerHeight;
+    }
+    prevScrollPosition = document.documentElement.scrollTop;
+  }, 100);
+
+  const scrollHandler = () => {
+    console.log('scroll');
+    let scrollPosition = document.documentElement.scrollTop;
+    let page = scrollPosition / window.innerHeight;
+    let remainder = scrollPosition % window.innerHeight;
+    if (remainder === 0) {
+      return
+    }
+
+    if (lastScrollDirection === "up") {
+      page = Math.ceil(page) - 1;
+    } else if (lastScrollDirection === "down"){
+      page = Math.floor(page) + 1;
+    }
+    console.log(scrollPosition, page);
+
+    setPage(page);
   };
 
-  runStopChecker();
+  const setPage = (page) => {
+    currentPage = page;
+  }
+
+  document.addEventListener('scroll', scrollHandler); 
 
   return (
-    <div id="app">
+    <div
+      id="app"
+      onWheel={WheelListener}
+      onTouchStartCapture={TouchStartListener}
+      onTouchEnd={TouchEndListener}
+    >
+      <img className="logo" src={logo} alt="logo" />
       <TopBlock />
       <MidBlock />
       <TopBlock />
