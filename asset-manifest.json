@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/tai-and-fish/static/css/main.da56219a.chunk.css",
-    "main.js": "/tai-and-fish/static/js/main.bc163d3d.chunk.js",
-    "main.js.map": "/tai-and-fish/static/js/main.bc163d3d.chunk.js.map",
+    "main.css": "/tai-and-fish/static/css/main.fc5b0da5.chunk.css",
+    "main.js": "/tai-and-fish/static/js/main.76bf069e.chunk.js",
+    "main.js.map": "/tai-and-fish/static/js/main.76bf069e.chunk.js.map",
     "runtime-main.js": "/tai-and-fish/static/js/runtime-main.4bb93bfd.js",
     "runtime-main.js.map": "/tai-and-fish/static/js/runtime-main.4bb93bfd.js.map",
     "static/js/2.986c1608.chunk.js": "/tai-and-fish/static/js/2.986c1608.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.3edc8dbf.chunk.js": "/tai-and-fish/static/js/3.3edc8dbf.chunk.js",
     "static/js/3.3edc8dbf.chunk.js.map": "/tai-and-fish/static/js/3.3edc8dbf.chunk.js.map",
     "index.html": "/tai-and-fish/index.html",
-    "static/css/main.da56219a.chunk.css.map": "/tai-and-fish/static/css/main.da56219a.chunk.css.map",
+    "static/css/main.fc5b0da5.chunk.css.map": "/tai-and-fish/static/css/main.fc5b0da5.chunk.css.map",
     "static/js/2.986c1608.chunk.js.LICENSE.txt": "/tai-and-fish/static/js/2.986c1608.chunk.js.LICENSE.txt",
     "static/media/logo.291c13d6.svg": "/tai-and-fish/static/media/logo.291c13d6.svg",
     "static/media/App.css": "/tai-and-fish/static/media/top_bg.771af8b3.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.4bb93bfd.js",
     "static/js/2.986c1608.chunk.js",
-    "static/css/main.da56219a.chunk.css",
-    "static/js/main.bc163d3d.chunk.js"
+    "static/css/main.fc5b0da5.chunk.css",
+    "static/js/main.76bf069e.chunk.js"
   ]
 }
