@@ -1,80 +1,90 @@
 import logo from "./img/logo.svg";
 import "./css/App.css";
 import "./css/index.css";
+import "./css/aos.css";
 import TopBlock from "./component/TopBlock";
-import MidBlock from "./component/MidBlock";
+// import MidBlock from "./component/MidBlock";
+import WeddingInfoBlock from "./component/WeddingInfoBlock";
+import { useEffect } from "react";
+
+import AOS from "aos";
 
 const APP = () => {
-  let currentPage = 0;
-  let lastScrollDirection;
-  let prevScrollPosition = document.documentElement.scrollTop;
+  // let currentPage = 0;
+  // let lastScrollDirection;
+  // let prevScrollPosition = document.documentElement.scrollTop;
 
-  const WheelListener = (event) => {
-    if (event.deltaY > 0) {
-      lastScrollDirection = 'down';
-    } else {
-      lastScrollDirection = 'up';
-    }
-  };
+  useEffect(() => {
+    AOS.init({
+      duration : 2000
+    });
+  }, []);
 
-  let startY = null;
+  // const WheelListener = (event) => {
+  //   if (event.deltaY > 0) {
+  //     lastScrollDirection = 'down';
+  //   } else {
+  //     lastScrollDirection = 'up';
+  //   }
+  // };
 
-  const TouchStartListener = (event) => {
-    startY = event.changedTouches[0].pageY;
-  };
+  // let startY = null;
 
-  const TouchEndListener = (event) => {
-    let endY = event.changedTouches[0].pageY;
-    if (endY - startY > 0) {
-      lastScrollDirection = 'up';
-    } else if (startY - endY > 0) {
-      lastScrollDirection = 'down';
-    }
-  };
+  // const TouchStartListener = (event) => {
+  //   startY = event.changedTouches[0].pageY;
+  // };
 
-  setInterval(() => {
-    if (prevScrollPosition === document.documentElement.scrollTop) {
-      document.documentElement.scrollTop = currentPage * window.innerHeight;
-    }
-    prevScrollPosition = document.documentElement.scrollTop;
-  }, 100);
+  // const TouchEndListener = (event) => {
+  //   let endY = event.changedTouches[0].pageY;
+  //   if (endY - startY > 0) {
+  //     lastScrollDirection = 'up';
+  //   } else if (startY - endY > 0) {
+  //     lastScrollDirection = 'down';
+  //   }
+  // };
 
-  const scrollHandler = () => {
-    console.log('scroll');
-    let scrollPosition = document.documentElement.scrollTop;
-    let page = scrollPosition / window.innerHeight;
-    let remainder = scrollPosition % window.innerHeight;
-    if (remainder === 0) {
-      return
-    }
+  // setInterval(() => {
+  //   if (prevScrollPosition === document.documentElement.scrollTop) {
+  //     document.documentElement.scrollTop = currentPage * window.innerHeight;
+  //   }
+  //   prevScrollPosition = document.documentElement.scrollTop;
+  // }, 100);
 
-    if (lastScrollDirection === "up") {
-      page = Math.ceil(page) - 1;
-    } else if (lastScrollDirection === "down"){
-      page = Math.floor(page) + 1;
-    }
-    console.log(scrollPosition, page);
+  // const scrollHandler = () => {
+  //   console.log('scroll');
+  //   let scrollPosition = document.documentElement.scrollTop;
+  //   let page = scrollPosition / window.innerHeight;
+  //   let remainder = scrollPosition % window.innerHeight;
+  //   if (remainder === 0) {
+  //     return
+  //   }
 
-    setPage(page);
-  };
+  //   if (lastScrollDirection === "up") {
+  //     page = Math.ceil(page) - 1;
+  //   } else if (lastScrollDirection === "down"){
+  //     page = Math.floor(page) + 1;
+  //   }
+  //   console.log(scrollPosition, page);
 
-  const setPage = (page) => {
-    currentPage = page;
-  }
+  //   setPage(page);
+  // };
 
-  document.addEventListener('scroll', scrollHandler); 
+  // const setPage = (page) => {
+  //   currentPage = page;
+  // }
+
+  // document.addEventListener('scroll', scrollHandler); 
 
   return (
     <div
       id="app"
-      onWheel={WheelListener}
-      onTouchStartCapture={TouchStartListener}
-      onTouchEnd={TouchEndListener}
+      // onWheel={WheelListener}
+      // onTouchStartCapture={TouchStartListener}
+      // onTouchEnd={TouchEndListener}
     >
       <img className="logo" src={logo} alt="logo" />
       <TopBlock />
-      <MidBlock />
-      <TopBlock />
+      <WeddingInfoBlock />
     </div>
   );
 };
