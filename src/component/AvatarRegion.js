@@ -5,33 +5,21 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 
 const AvatarRegion = () => (
   <div className="avatar-region" data-aos="fade-up" data-aos-duration="1000">
-    <div
-      style={{
-        float: "left",
-        lineHeight: "150px",
-        fontFamily: "cwTeXYen",
-        fontSize: "40px",
-      }}
-    >
-      戴佑亘
+    <div className="avatar-with-name">
+      <span className="name-man">戴佑亘</span>
+      <ImageBall class="avatar-man" src={tai} alt="" />
     </div>
-    <ImageBall src={tai} alt="" style={{ float: "right" }} />
+
     <div
       className="heart-ball centered-axis-x"
       style={{ position: "absolute" }}
     >
       <FavoriteIcon htmlColor="#F14E95" style={{}} />
     </div>
-    <ImageBall src={fish} alt="" style={{ float: "left" }} />
-    <div
-      style={{
-        fontSize: "40px",
-        float: "right",
-        lineHeight: "150px",
-        fontFamily: "cwTeXYen",
-      }}
-    >
-      鄒瑜　
+
+    <div className="avatar-with-name">
+      <span className="name-woman">鄒瑜　</span>
+      <ImageBall class="avatar-woman" src={fish} alt="" />
     </div>
   </div>
 );
