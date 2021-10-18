@@ -4,7 +4,7 @@ import "./css/index.css";
 import "./css/aos.css";
 import TopBlock from "./component/TopBlock";
 // import MidBlock from "./component/MidBlock";
-import WeddingInfoBlock from "./component/WeddingInfoBlock";
+import StoryBlock from "./component/StoryBlock";
 import { useEffect } from "react";
 
 import AOS from "aos";
@@ -84,7 +84,7 @@ const APP = () => {
     >
       <img className="logo" src={logo} alt="logo" />
       <TopBlock />
-      <WeddingInfoBlock />
+      <StoryBlock />
     </div>
   );
 };
