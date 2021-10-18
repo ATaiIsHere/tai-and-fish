@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/tai-and-fish/static/css/main.01f50b31.chunk.css",
-    "main.js": "/tai-and-fish/static/js/main.750062c4.chunk.js",
-    "main.js.map": "/tai-and-fish/static/js/main.750062c4.chunk.js.map",
+    "main.css": "/tai-and-fish/static/css/main.cd151f0f.chunk.css",
+    "main.js": "/tai-and-fish/static/js/main.031d4dfb.chunk.js",
+    "main.js.map": "/tai-and-fish/static/js/main.031d4dfb.chunk.js.map",
     "runtime-main.js": "/tai-and-fish/static/js/runtime-main.87e601ff.js",
     "runtime-main.js.map": "/tai-and-fish/static/js/runtime-main.87e601ff.js.map",
-    "static/js/2.1b0d6fe4.chunk.js": "/tai-and-fish/static/js/2.1b0d6fe4.chunk.js",
-    "static/js/2.1b0d6fe4.chunk.js.map": "/tai-and-fish/static/js/2.1b0d6fe4.chunk.js.map",
+    "static/js/2.f3cda1e6.chunk.js": "/tai-and-fish/static/js/2.f3cda1e6.chunk.js",
+    "static/js/2.f3cda1e6.chunk.js.map": "/tai-and-fish/static/js/2.f3cda1e6.chunk.js.map",
     "static/js/3.3d23ee19.chunk.js": "/tai-and-fish/static/js/3.3d23ee19.chunk.js",
     "static/js/3.3d23ee19.chunk.js.map": "/tai-and-fish/static/js/3.3d23ee19.chunk.js.map",
     "index.html": "/tai-and-fish/index.html",
-    "static/css/main.01f50b31.chunk.css.map": "/tai-and-fish/static/css/main.01f50b31.chunk.css.map",
-    "static/js/2.1b0d6fe4.chunk.js.LICENSE.txt": "/tai-and-fish/static/js/2.1b0d6fe4.chunk.js.LICENSE.txt",
+    "static/css/main.cd151f0f.chunk.css.map": "/tai-and-fish/static/css/main.cd151f0f.chunk.css.map",
+    "static/js/2.f3cda1e6.chunk.js.LICENSE.txt": "/tai-and-fish/static/js/2.f3cda1e6.chunk.js.LICENSE.txt",
+    "static/media/event1.8c2dacb8.jpg": "/tai-and-fish/static/media/event1.8c2dacb8.jpg",
     "static/media/fish.b50fc103.jpg": "/tai-and-fish/static/media/fish.b50fc103.jpg",
     "static/media/logo.291c13d6.svg": "/tai-and-fish/static/media/logo.291c13d6.svg",
     "static/media/tai.8e557338.jpg": "/tai-and-fish/static/media/tai.8e557338.jpg",
-    "static/media/App.css": "/tai-and-fish/static/media/top_bg.771af8b3.jpg"
+    "static/media/App.css": "/tai-and-fish/static/media/top_bg.771af8b3.jpg",
+    "static/media/index.css": "/tai-and-fish/static/media/work-sans-v11-latin-regular.6817b7a5.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.87e601ff.js",
-    "static/js/2.1b0d6fe4.chunk.js",
-    "static/css/main.01f50b31.chunk.css",
-    "static/js/main.750062c4.chunk.js"
+    "static/js/2.f3cda1e6.chunk.js",
+    "static/css/main.cd151f0f.chunk.css",
+    "static/js/main.031d4dfb.chunk.js"
   ]
 }
