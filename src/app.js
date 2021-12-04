@@ -5,6 +5,8 @@ import "./css/aos.css";
 import TopBlock from "./component/TopBlock";
 // import MidBlock from "./component/MidBlock";
 import StoryBlock from "./component/StoryBlock";
+import BlessingBlock from "./component/BlessingBlock";
+
 import { useEffect } from "react";
 
 import AOS from "aos";
@@ -85,6 +87,8 @@ const APP = () => {
       <img className="logo" src={logo} alt="logo" />
       <TopBlock />
       <StoryBlock />
+      <BlessingBlock />
+
     </div>
   );
 };

@@ -4,8 +4,8 @@ import Timeline from "./Timeline/Timeline";
 
 const StoryBlock = () => {
   return (
-    <div className="wedding-info-block">
-      <HeadText text="Our Story" />
+    <div className="story-block">
+      <HeadText headType="story-head" text="Our Story" />
       <AvatarRegion />
       <Timeline />
     </div>
