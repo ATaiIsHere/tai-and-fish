@@ -1,3 +1,5 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 #app {
   height: 100%;
   /* overflow: scroll; */
@@ -45,7 +47,7 @@
   align-items: center;
 }
 
-.wedding-info-block {
+.story-block {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,22 +60,12 @@
   background-repeat: no-repeat; */
 }
 
-/* .wedding-info-block::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(0, 0, 0, 0.5);
-} */
-
-.story-head {
+.pink-head {
   font-size: 60px;
-  margin: 100px 0 10px 0;
+  margin: 50px 0 10px 0;
   line-height: 1.5;
   font-weight: bold;
-  color: #F14E95;
+  color: #f14e95;
   font-family: "Sacramento", Arial, serif;
 }
 
@@ -84,14 +76,162 @@
   justify-content: center;
 }
 
-.avatar-region > span {
-  /* display: inline-block; */
-  height: 100%;
+.avatar-region > .avatar-with-name {
+  float: left;
+}
+
+.avatar-man {
+  float: right;
+}
+
+.avatar-woman {
+  float: left;
+}
+
+.name-man {
+  float: left;
+  font-family: "cwTeXYen";
+  font-size: 40px;
+  line-height: 150px;
+  word-wrap: "normal";
+  word-break: "normal";
+}
+
+.name-woman {
+  float: right;
+  font-family: "cwTeXYen";
+  font-size: 40px;
+  line-height: 150px;
+  word-wrap: "normal";
+  word-break: "normal";
+}
+
+.timeline {
   position: relative;
-  font-size: 36px;
-  font-weight: 600;
-  margin: 10px;
-  /* color: #ffffff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  width: 100%;
+  padding: 50px 0 50px 0;
+}
+
+.timeline > .line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 1px;
+  background: #d4d4d4;
+  z-index: 0;
+}
+
+.event-card {
+  position: relative;
+  width: 90%;
+  max-width: 1160px;
+  min-height: 1px;
+  margin: 20px 0 10px 0;
+  overflow: visible;
+}
+
+.event-card > .event-photo {
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 80px);
+  width: 160px;
+  height: 120px;
+  border-radius: 10% 10% 10% 10%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  z-index: 2;
+}
+
+.event-card > .event-msg {
+  position: relative;
+  border-radius: 4px;
+  border: solid 1px #d4d4d4;
+  min-height: 120px;
+  width: calc(50% - 120px);
+  max-width: 460px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.event-card.left > .event-msg {
+  float: left;
+}
+
+.event-card.right > .event-msg {
+  float: right;
+}
+
+.event-card.left > .event-msg:before {
+  position: absolute;
+  top: 60px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.event-card.left > .event-msg:after {
+  position: absolute;
+  top: 61px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+.event-card.right > .event-msg:before {
+  position: absolute;
+  top: 60px;
+  left: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 0 solid #ccc;
+  border-right: 15px solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.event-card.right > .event-msg:after {
+  position: absolute;
+  top: 61px;
+  left: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 0 solid #fff;
+  border-right: 14px solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+.event-msg > div:nth-child(1) {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.event-msg > div:nth-child(2) {
+  font-size: 13px;
+  color: #828282;
+  margin-bottom: 10px;
+}
+
+.event-msg > div:nth-child(3) {
+  font-size: 16px;
+  color: #828282;
+  white-space: pre-wrap;
 }
 
 .mid-block {
@@ -176,6 +316,85 @@
     width: 80px;
     height: 80px;
   }
+
+  .avatar-with-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .avatar-with-name > span {
+    float: none;
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .avatar-with-name > img {
+    float: none;
+  }
+
+  .timeline {
+    padding: 20px 0 20px 0;
+  }
+
+  .timeline > .line {
+    left: 20%;
+  }
+
+  .event-card {
+    width: 100%;
+  }
+
+  .event-card > .event-photo {
+    width: 100px;
+    height: 75px;
+    top: 40px;
+    left: calc(20% - 50px);
+  }
+
+  .event-card.right > .event-msg {
+    float: left;
+  }
+
+  .event-card > .event-msg {
+    left: calc(20% + 90px);
+    width: calc(80% - 120px);
+  }
+
+  .event-card.left > .event-msg:before {
+    left: -15px;
+    right: unset;
+    border-left: 0 solid #ccc;
+    border-right: 15px solid #ccc;
+    content: " ";
+  }
+
+  .event-card.left > .event-msg:after {
+    left: -14px;
+    right: unset;
+    border-left: 0 solid #fff;
+    border-right: 14px solid #fff;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .timeline > .line {
+    left: 70px;
+  }
+
+  .event-card > .event-photo {
+    left: 20px;
+  }
+
+  .event-card > .event-msg {
+    right: 20px;
+  }
+
+  .event-card > .event-msg {
+    left: 140px;
+    width: calc(100% - 160px);
+  }
 }
 
 @keyframes pulse {
@@ -192,11 +411,58 @@
 
 @keyframes fadeInUpBig {
   0% {
-     opacity: 0;
-     transform: translateY(200px);
+    opacity: 0;
+    transform: translateY(200px);
   }
   100% {
-     opacity: 1;
-     transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.blessing-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: rgba(0, 0, 0, 0.04);
+  /* background-image: url("../img/wedding_info_bg.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; */
+  /* padding-bottom: 50px; */
+}
+
+/* .blessing-block::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+
+.gallery-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  /* padding-bottom: 50px; */
+}
+
+.white-head {
+  font-size: 60px;
+  margin: 100px 0 10px 0;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Sacramento", Arial, serif;
 }

@@ -6,23 +6,23 @@ on:
 
 jobs:
 
-  install-and-test:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x]
-    steps:
-    - uses: actions/checkout@master
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@master
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install and Test
-      run: |
-        yarn
-        yarn test
-      env:
-        CI: true
+  # install-and-test:
+  #   runs-on: ubuntu-latest
+  #   strategy:
+  #     matrix:
+  #       node-version: [12.x, 14.x]
+  #   steps:
+  #   - uses: actions/checkout@master
+  #   - name: Use Node.js ${{ matrix.node-version }}
+  #     uses: actions/setup-node@master
+  #     with:
+  #       node-version: ${{ matrix.node-version }}
+  #   - name: Install and Test
+  #     run: |
+  #       yarn
+  #       yarn test
+  #     env:
+  #       CI: true
 
   build-and-deploy:
     runs-on: ubuntu-latest
