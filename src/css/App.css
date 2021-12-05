@@ -1,3 +1,5 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 #app {
   height: 100%;
   /* overflow: scroll; */
@@ -58,9 +60,9 @@
   background-repeat: no-repeat; */
 }
 
-.story-head {
+.pink-head {
   font-size: 60px;
-  margin: 100px 0 10px 0;
+  margin: 50px 0 10px 0;
   line-height: 1.5;
   font-weight: bold;
   color: #f14e95;
@@ -352,7 +354,7 @@
   }
 
   .event-card.right > .event-msg {
-    float: left;    
+    float: left;
   }
 
   .event-card > .event-msg {
@@ -362,15 +364,15 @@
 
   .event-card.left > .event-msg:before {
     left: -15px;
-    right:unset;
+    right: unset;
     border-left: 0 solid #ccc;
     border-right: 15px solid #ccc;
     content: " ";
   }
-  
+
   .event-card.left > .event-msg:after {
     left: -14px;
-    right:unset;
+    right: unset;
     border-left: 0 solid #fff;
     border-right: 14px solid #fff;
   }
@@ -428,15 +430,16 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
-  background-image: url("../img/wedding_info_bg.jpg");
+  background: rgba(0, 0, 0, 0.04);
+  /* background-image: url("../img/wedding_info_bg.jpg");
   background-size: cover;
   background-position-x: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  padding-bottom: 100px;
+  background-repeat: no-repeat; */
+  /* padding-bottom: 50px; */
 }
 
-.blessing-block::before {
+/* .blessing-block::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -444,9 +447,18 @@
   bottom: 0px;
   left: 0px;
   background-color: rgba(0, 0, 0, 0.5);
+} */
+
+.gallery-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  /* padding-bottom: 50px; */
 }
 
-.blessing-head {
+.white-head {
   font-size: 60px;
   margin: 100px 0 10px 0;
   line-height: 1.5;
