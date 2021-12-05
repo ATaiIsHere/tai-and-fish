@@ -42,6 +42,7 @@
   background-position-x: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  min-height: 100vh;
   z-index:-2;
 }
 
