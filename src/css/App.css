@@ -472,3 +472,19 @@
   color: #ffffff;
   font-family: "Sacramento", Arial, serif;
 }
+
+@media screen and (max-width: 1024px) {
+  .gallery-container {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery-container {
+    max-width: 1024px;
+  }
+}
+
+.image-gallery-image {
+  max-height: 135vw !important;
+}
