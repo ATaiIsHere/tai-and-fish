@@ -7,7 +7,7 @@ const BlessingBlock = () => {
     <PageBlock class="blessing-block">
       <HeadText headType="pink-head" text="Blessing" />
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=HgzGwKwLmgM"
+        url="https://www.youtube.com/watch?v=BABn1z4nfew"
         width="100%"
         height="56vw"
         style={{ maxWidth: "1024px", maxHeight: "576px", zIndex: 99 }}

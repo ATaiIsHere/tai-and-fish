@@ -68,7 +68,7 @@ const imageURLs = [
   "https://i.imgur.com/JzdCbSA.jpg",
   "https://i.imgur.com/hyhtlHU.jpg",
   "https://i.imgur.com/zt00H4J.jpg",
-  "https://i.imgur.com/mmjRvNM"
+  "https://i.imgur.com/mmjRvNM.jpg"
 ]
 const images = imageURLs.map((url) => ({
   original: url,
