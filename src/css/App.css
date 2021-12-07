@@ -34,6 +34,10 @@
   .top-block {
     background-attachment: inherit;
   }
+
+  .blessing-block {
+    background-attachment: inherit;
+  }
 }
 
 .top-block::before {
@@ -437,23 +441,23 @@
   flex-direction: column;
   position: relative;
   background: rgba(0, 0, 0, 0.04);
-  /* background-image: url("../img/wedding_info_bg.jpg");
+  background-image: url("../img/blessing_bg.png");
   background-size: cover;
   background-position-x: center;
   background-attachment: fixed;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   /* padding-bottom: 50px; */
 }
 
-/* .blessing-block::before {
+.blessing-block::before {
   content: "";
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0, 0, 0, 0.5);
-} */
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
 .gallery-block {
   display: flex;
