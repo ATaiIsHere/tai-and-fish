@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/tai-and-fish/static/css/main.32c8f1ae.chunk.css",
-    "main.js": "/tai-and-fish/static/js/main.0fe68dfa.chunk.js",
-    "main.js.map": "/tai-and-fish/static/js/main.0fe68dfa.chunk.js.map",
+    "main.css": "/tai-and-fish/static/css/main.4cca3960.chunk.css",
+    "main.js": "/tai-and-fish/static/js/main.9c843ba5.chunk.js",
+    "main.js.map": "/tai-and-fish/static/js/main.9c843ba5.chunk.js.map",
     "runtime-main.js": "/tai-and-fish/static/js/runtime-main.7ed2fd9e.js",
     "runtime-main.js.map": "/tai-and-fish/static/js/runtime-main.7ed2fd9e.js.map",
     "static/css/2.6cd54866.chunk.css": "/tai-and-fish/static/css/2.6cd54866.chunk.css",
@@ -12,8 +12,9 @@
     "static/js/3.4087dfed.chunk.js.map": "/tai-and-fish/static/js/3.4087dfed.chunk.js.map",
     "index.html": "/tai-and-fish/index.html",
     "static/css/2.6cd54866.chunk.css.map": "/tai-and-fish/static/css/2.6cd54866.chunk.css.map",
-    "static/css/main.32c8f1ae.chunk.css.map": "/tai-and-fish/static/css/main.32c8f1ae.chunk.css.map",
+    "static/css/main.4cca3960.chunk.css.map": "/tai-and-fish/static/css/main.4cca3960.chunk.css.map",
     "static/js/2.a46a4329.chunk.js.LICENSE.txt": "/tai-and-fish/static/js/2.a46a4329.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/tai-and-fish/static/media/top_bg.771af8b3.jpg",
     "static/media/event0.a3760254.jpg": "/tai-and-fish/static/media/event0.a3760254.jpg",
     "static/media/event1.8c2dacb8.jpg": "/tai-and-fish/static/media/event1.8c2dacb8.jpg",
     "static/media/event2.29fa30ce.jpg": "/tai-and-fish/static/media/event2.29fa30ce.jpg",
@@ -23,14 +24,13 @@
     "static/media/fish.b50fc103.jpg": "/tai-and-fish/static/media/fish.b50fc103.jpg",
     "static/media/logo.291c13d6.svg": "/tai-and-fish/static/media/logo.291c13d6.svg",
     "static/media/tai.8e557338.jpg": "/tai-and-fish/static/media/tai.8e557338.jpg",
-    "static/media/App.css": "/tai-and-fish/static/media/top_bg.771af8b3.jpg",
     "static/media/index.css": "/tai-and-fish/static/media/work-sans-v11-latin-regular.6817b7a5.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.7ed2fd9e.js",
     "static/css/2.6cd54866.chunk.css",
     "static/js/2.a46a4329.chunk.js",
-    "static/css/main.32c8f1ae.chunk.css",
-    "static/js/main.0fe68dfa.chunk.js"
+    "static/css/main.4cca3960.chunk.css",
+    "static/js/main.9c843ba5.chunk.js"
   ]
 }
