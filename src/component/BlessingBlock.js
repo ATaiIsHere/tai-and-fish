@@ -5,7 +5,7 @@ import PageBlock from "./PageBlock";
 const BlessingBlock = () => {
   return (
     <PageBlock class="blessing-block">
-      <HeadText headType="pink-head" text="Blessing" />
+      <HeadText headType="white-head" text="Blessing" />
       <ReactPlayer
         url="https://www.youtube.com/watch?v=BABn1z4nfew"
         width="100%"
