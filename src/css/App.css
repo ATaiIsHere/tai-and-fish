@@ -441,7 +441,7 @@
   flex-direction: column;
   position: relative;
   background: rgba(0, 0, 0, 0.04);
-  background-image: url("../img/blessing_bg.png");
+  background-image: url("../img/blessing_bg.jpg");
   background-size: cover;
   background-position-x: center;
   background-attachment: fixed;
@@ -477,18 +477,6 @@
   font-family: "Sacramento", Arial, serif;
 }
 
-@media screen and (max-width: 1024px) {
-  .gallery-container {
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .gallery-container {
-    max-width: 1024px;
-  }
-}
-
-.image-gallery-image {
-  max-height: 135vw !important;
+.gallery-container {
+  max-width: 100%;
 }

@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useState } from "react";
 import ImageGallery from "react-image-gallery";
 import errorImage from "../img/error-image-generic.png";
 import HeadText from "./HeadText";
@@ -70,14 +72,41 @@ const imageURLs = [
   "https://i.imgur.com/zt00H4J.jpg",
   "https://i.imgur.com/mmjRvNM.jpg"
 ]
-const images = imageURLs.map((url) => ({
+const getImages = (width, height) => imageURLs.map((url) => ({
   original: url,
   thumbnail: url,
-  originalHeight: "768px",
-  originalWidth: "1024px",
+  originalHeight: `${height}px`,
+  originalWidth: `${width}px`,
 }));
 
-const GalleryBlock = () => {
+const GalleryBlock = () => { 
+  // let [playerSize, setPlayerSize] = useState({ width: 1024, height: 768 });
+  let [images, setImages] = useState(getImages(1024, 768));
+
+  const resizeHandler = () => {
+    const [maxWidth, maxHeight] = [window.innerWidth, window.innerHeight - 260];
+    let width, height;
+
+    if (maxWidth / maxHeight > 1.5) {
+      height = maxHeight;
+
+      width = parseInt(height * 1.5);
+    } else {
+      width = maxWidth;
+
+      height = parseInt(width / 1.5);
+    }
+
+    setImages(getImages(width, height));
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", resizeHandler);
+    resizeHandler();
+
+    return () => window.removeEventListener("resize", resizeHandler);
+  }, []);
+
   return (
     <PageBlock class="gallery-block">
       <HeadText headType="pink-head" text="Gallery" />
@@ -86,7 +115,7 @@ const GalleryBlock = () => {
           items={images}
           autoPlay={true}
           onErrorImageURL={errorImage}
-          lazyLoad={true}
+          // lazyLoad={true}
         />
       </div>
     </PageBlock>
