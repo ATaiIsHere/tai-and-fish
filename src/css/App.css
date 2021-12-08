@@ -19,7 +19,7 @@
 
 .top-block {
   position: relative;
-  background-image: url("../img/blessing_bg.jpg");
+  background-image: url("../img/top_bg.jpg");
   background-size: cover;
   background-position-x: center;
   background-attachment: fixed;
@@ -430,7 +430,7 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
-  background-image: url("../img/top_bg.jpg");
+  background-image: url("../img/blessing_bg.jpg");
   background-size: cover;
   background-position-x: center;
   background-attachment: fixed;
