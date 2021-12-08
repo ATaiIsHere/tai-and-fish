@@ -30,16 +30,6 @@
   flex-direction: column;
 }
 
-@supports (-webkit-touch-callout: none) {
-  .top-block {
-    background-attachment: inherit;
-  }
-
-  .blessing-block {
-    background-attachment: inherit;
-  }
-}
-
 .top-block::before {
   content: "";
   position: absolute;
@@ -477,4 +467,14 @@
 
 .gallery-container {
   max-width: 100%;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .top-block {
+    background-attachment: inherit;
+  }
+
+  .blessing-block {
+    background-attachment: inherit;
+  }
 }
