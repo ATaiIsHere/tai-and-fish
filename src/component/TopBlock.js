@@ -3,7 +3,7 @@ import LeftTimeDisplay from "./LeftTimeDisplay";
 import PageBlock from "./PageBlock";
 
 const TopBlock = () => {
-  const target = new Date("2021/12/19 00:59:00");
+  const target = new Date("2021/12/19 12:30:00");
   const getMaritalStatus = () => {
     return target > new Date()
       ? "We Are Getting Married"
