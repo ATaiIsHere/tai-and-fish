@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/tai-and-fish/static/css/main.cf52d198.chunk.css",
-    "main.js": "/tai-and-fish/static/js/main.1be27f87.chunk.js",
-    "main.js.map": "/tai-and-fish/static/js/main.1be27f87.chunk.js.map",
+    "main.css": "/tai-and-fish/static/css/main.80c70c8f.chunk.css",
+    "main.js": "/tai-and-fish/static/js/main.6fe2e04c.chunk.js",
+    "main.js.map": "/tai-and-fish/static/js/main.6fe2e04c.chunk.js.map",
     "runtime-main.js": "/tai-and-fish/static/js/runtime-main.7ed2fd9e.js",
     "runtime-main.js.map": "/tai-and-fish/static/js/runtime-main.7ed2fd9e.js.map",
     "static/css/2.6cd54866.chunk.css": "/tai-and-fish/static/css/2.6cd54866.chunk.css",
@@ -12,9 +12,9 @@
     "static/js/3.4087dfed.chunk.js.map": "/tai-and-fish/static/js/3.4087dfed.chunk.js.map",
     "index.html": "/tai-and-fish/index.html",
     "static/css/2.6cd54866.chunk.css.map": "/tai-and-fish/static/css/2.6cd54866.chunk.css.map",
-    "static/css/main.cf52d198.chunk.css.map": "/tai-and-fish/static/css/main.cf52d198.chunk.css.map",
+    "static/css/main.80c70c8f.chunk.css.map": "/tai-and-fish/static/css/main.80c70c8f.chunk.css.map",
     "static/js/2.a46a4329.chunk.js.LICENSE.txt": "/tai-and-fish/static/js/2.a46a4329.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/tai-and-fish/static/media/top_bg.771af8b3.jpg",
+    "static/media/App.css": "/tai-and-fish/static/media/pre_top_bg.771af8b3.jpg",
     "static/media/event0.a3760254.jpg": "/tai-and-fish/static/media/event0.a3760254.jpg",
     "static/media/event1.8c2dacb8.jpg": "/tai-and-fish/static/media/event1.8c2dacb8.jpg",
     "static/media/event2.90d65b80.jpg": "/tai-and-fish/static/media/event2.90d65b80.jpg",
@@ -31,7 +31,7 @@
     "static/js/runtime-main.7ed2fd9e.js",
     "static/css/2.6cd54866.chunk.css",
     "static/js/2.a46a4329.chunk.js",
-    "static/css/main.cf52d198.chunk.css",
-    "static/js/main.1be27f87.chunk.js"
+    "static/css/main.80c70c8f.chunk.css",
+    "static/js/main.6fe2e04c.chunk.js"
   ]
 }
