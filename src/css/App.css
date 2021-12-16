@@ -17,9 +17,17 @@
   width: 100%;
 }
 
+.top-block-pre {
+  background-image: url("../img/pre_top_bg.jpg");
+}
+
+.top-block-post {
+  background-image: url("../img/post_top_bg.jpg");
+}
+
 .top-block {
   position: relative;
-  background-image: url("../img/top_bg.jpg");
+  /* background-image: url("../img/top_bg.jpg"); */
   background-size: cover;
   background-position-x: center;
   background-attachment: fixed;
@@ -89,6 +97,7 @@
 }
 
 .name-man {
+  height: 45px;
   float: left;
   font-family: "cwTeXYen";
   font-size: 40px;
@@ -98,6 +107,7 @@
 }
 
 .name-woman {
+  height: 45px;
   float: right;
   font-family: "cwTeXYen";
   font-size: 40px;
@@ -255,6 +265,11 @@
   font-weight: 400;
 }
 
+.text-size-post {
+  font-size: 40px;
+  font-weight: 900;
+}
+
 .digital-ball {
   width: 100px;
   height: 100px;
@@ -327,7 +342,7 @@
   .avatar-with-name > span {
     float: none;
     font-size: 30px;
-    line-height: normal;
+    line-height: 45px;
   }
 
   .avatar-with-name > img {

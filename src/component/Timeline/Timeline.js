@@ -6,7 +6,7 @@ import EventPhote3 from "../../img/event3.jpg";
 import EventPhote4 from "../../img/event4.jpg";
 import EventPhote5 from "../../img/event5.jpg";
 import EventPhote6 from "../../img/event6.jpg";
-import EventPhote7 from "../../img/top_bg.jpg";
+import EventPhote7 from "../../img/pre_top_bg.jpg";
 import setting from "../../setting";
 
 let msgList = [

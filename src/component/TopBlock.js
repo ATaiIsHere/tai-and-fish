@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from "react";
 import LeftTimeDisplay from "./LeftTimeDisplay";
 import PageBlock from "./PageBlock";
+import setting from "../setting";
 
 const TopBlock = () => {
-  const target = new Date("2021/12/19 12:30:00");
-  const getMaritalStatus = () => {
+  const target = setting.targetTime;
+  const getContent = () => {
     return target > new Date()
-      ? "We Are Getting Married"
-      : "We Are Married";
+      ? {maritalStatus: "We Are Getting Married", backgroundClass: "top-block-pre", fontSize: ""}
+      : {maritalStatus:"We Are Married", backgroundClass: "top-block-post", fontSize: "text-size-post"};
   };
-
-  const [maritalStatus, setMaritalStatus] = useState(getMaritalStatus());
+  
+  const [content, setContent] = useState(getContent());
 
   useEffect(() => {
     let repeat = setInterval(() => {
-      setMaritalStatus(getMaritalStatus());
+      setContent(getContent());
     }, 1000);
 
     return () => {
@@ -22,14 +23,14 @@ const TopBlock = () => {
     };
   });
   return (
-    <PageBlock class="top-block">
+    <PageBlock class={`top-block ${content.backgroundClass}`}>
       <div
         className="top-block-content"
         data-aos="zoom-in"
         data-aos-duration="700"
       >
         <h1 className="block-title white-text">{"ATai & Fish"}</h1>
-        <h2 className="block-text white-text">{maritalStatus}</h2>
+        <h2 className={`block-text white-text ${content.fontSize}`}>{content.maritalStatus}</h2>
         <LeftTimeDisplay target={target} />
       </div>
     </PageBlock>
