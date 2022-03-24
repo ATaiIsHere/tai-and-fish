@@ -1,7 +1,36 @@
-# Getting Started with Create React App
+# Tai and Fish
+## 這是什麼?
+2021/12/19 前夕，我完成這個專案，主要是為了紀念我結婚了。
+
+我還沒跟我老婆求婚，我們就拍完婚紗，訂好婚宴，並完成結婚登記了!
+
+一直到婚禮前，我一直想要補一個求婚的流程。
+
+我用 React 做了一個網頁並用 GitHub Page 發布 [Click me!](https://ataiishere.github.io/tai-and-fish/)
+
+內容主要是和我老婆之間的交往小記事和婚紗照。
+
+並利用 GitHub Action 建立自動化布署流程，每次 Merge 過後就能夠自動布署。
+
+GitHub Page 的服務真的很棒，如此一來我就有個人化的 Domain Name 可以做使用。
+
+我將它做成 QR Code 貼紙，並貼在我送給我老婆三周年的交往紀念小物上面，給他一個驚喜
+![image](https://i.imgur.com/S8NmfEr.png)
+
+後來也在我們的婚禮用上了，貼在每個婚禮小物、小卡，讓賓客認識我們之間的交往過程。
+
+## 下一步?
+- 獨立出一份設定檔，讓其他人可以克製化成自己婚禮網頁。 (如果有人需要的話 XD)
+- 其他婚禮相關功能
+  - 婚宴出席表單
+  - 婚宴座位查詢
+  - ...
+
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -29,42 +58,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
