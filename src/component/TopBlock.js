@@ -29,7 +29,7 @@ const TopBlock = () => {
         data-aos="zoom-in"
         data-aos-duration="700"
       >
-        <h1 className="block-title white-text">{"ATai & Fish"}</h1>
+        <h1 className="block-title white-text">{`${setting.brideGroom.englishName} & ${setting.bride.englishName}`}</h1>
         <h2 className={`block-text white-text ${content.fontSize}`}>{content.maritalStatus}</h2>
         <LeftTimeDisplay target={target} />
       </div>

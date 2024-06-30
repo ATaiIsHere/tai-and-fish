@@ -1,15 +1,140 @@
+import EventPhote0 from "../../img/event0.jpg";
+import EventPhote1 from "../../img/event1.jpg";
+import EventPhote2 from "../../img/event2.jpg";
+import EventPhote3 from "../../img/event3.jpg";
+import EventPhote4 from "../../img/event4.jpg";
+import EventPhote5 from "../../img/event5.jpg";
+import EventPhote6 from "../../img/event6.jpg";
+import EventPhote7 from "../../img/pre_top_bg.jpg";
+
 const setting = {
-    targetTime: new Date("2021/12/19 12:30:00"),
-    storyMsgList: [
-        "我們不是同班同學，不是學長學妹，也不是朋友的朋友，而是交友軟體的網友。這樣的相遇大概也是這個世代最普通也最平凡的一種，相當適合生活圈超級狹隘的工程師與護理師。\n當初聊了些什麼也很模糊，只記得當時無敵破壞王2剛上映，就約你一起看。現在想想才覺得你當初答應我的邀約還蠻不可思議的，畢竟你總是會擔心很多，何況是跟認識不久的網友見面XD\n\n#緣圈\n#脫魯神器\n#首先要有張照騙",
-        "我們相約在新光三越看電影，但有個人卻跑到了SOGO，我們在電話兩頭雞同鴨講了好久才發現。\n看完電影後，我們到歌劇院、秋紅谷散步聊天，夜色暗了才解散。後來你跟我說：你對我一見如故，赴約前跟室友報備，結果聊到天黑，連手機訊息也忽略，讓室友虛驚一場。\n\n#母湯跑錯地方\n#母湯讓室友擔心",
-        "第一次約會後，我們更加熱絡了，知道你的生日將近，所以做了這樣的卡片。\n\n#手作卡片\n#超有心bj4",
-        "這天我們相約一起逛太原夜市，人潮有點擁擠，不知哪來的勇氣，假裝怕妳走散而牽起妳的手，就這麼牽到了現在。\n\n#牽手可是會把女生的心牽走\n#牽就對了\n#哥有練過別亂學\n#警察北北94他",
-        "來自四面八方的壓力，想說那明年六月結婚好了，約彼此父母出來認識一下，闡述一下我們的想法，結果怎麼變成今年要結婚Orz，下午直奔婚紗店簽約。\n\n#別輕易讓他們見面\n#提親X\n#逼婚O",
-        "這感覺真的很奇妙，我竟然結婚了! 也正式迎接我們的同居生活。煮飯、買菜成了我們的日常，而這段時間台灣遭受新冠病毒肆虐，讓我們計畫已久的花蓮行泡湯了(我比較想真的去東部泡湯R~~)。但與你的居家防疫生活也是過得悠遊自在。\n\n#居家防疫\n#全民廚神\n#還我婚假",
-        "三周年的今天，回想這一年，真的覺得過得好快，也完成了很多事，覺得自己不斷在跳脫舒適圈。\n你也很棒，念碩士班真的辛苦了，為了給妳加油打氣，今天我給你準備了這樣的小驚喜，希望你會喜歡。\n下禮拜就讓我們一起完成今年、也是今生最重要的大事吧！\n\n#補求婚\n#草山夜未眠\n#室友神隊友\n#感謝促成祝福影片的各位",
-        "謝謝各位撥空參與，你們都是我們人生各階段重要的人，有了你們婚禮才能圓滿。也祝褔你我他，身體健康，萬事如意。\n\n#官腔\n#結束後再約\n#tai_and_fish"
-    ]
-}
+  bride: {
+    englishName: "Fish",
+    chineseName: "鄒瑜　",
+  },
+  brideGroom: {
+    englishName: "ATai",
+    chineseName: "戴佑亘",
+  },
+  filmURL: "https://www.youtube.com/watch?v=BABn1z4nfew",
+  targetTime: new Date("2021/12/19 12:30:00"),
+  memories: [
+    {
+      photo: EventPhote0,
+      title: "相遇",
+      date: "NOVEMBER, 2018",
+      msg: "我們不是同班同學，不是學長學妹，也不是朋友的朋友，而是交友軟體的網友。這樣的相遇大概也是這個世代最普通也最平凡的一種，相當適合生活圈超級狹隘的工程師與護理師。\n當初聊了些什麼也很模糊，只記得當時無敵破壞王2剛上映，就約你一起看。現在想想才覺得你當初答應我的邀約還蠻不可思議的，畢竟你總是會擔心很多，何況是跟認識不久的網友見面XD\n\n#緣圈\n#脫魯神器\n#首先要有張照騙",
+    },
+    {
+      photo: EventPhote1,
+      title: "第一次約會 - 無敵破壞王2",
+      date: "NOVEMBER 29, 2018",
+      msg: "我們相約在新光三越看電影，但有個人卻跑到了SOGO，我們在電話兩頭雞同鴨講了好久才發現。\n看完電影後，我們到歌劇院、秋紅谷散步聊天，夜色暗了才解散。後來你跟我說：你對我一見如故，赴約前跟室友報備，結果聊到天黑，連手機訊息也忽略，讓室友虛驚一場。\n\n#母湯跑錯地方\n#母湯讓室友擔心",
+    },
+    {
+      photo: EventPhote2,
+      title: "Fish 生日",
+      date: "DECEMBER 3, 2018",
+      msg: "第一次約會後，我們更加熱絡了，知道你的生日將近，所以做了這樣的卡片。\n\n#手作卡片\n#超有心bj4",
+    },
+    {
+      photo: EventPhote3,
+      title: "交往",
+      date: "DECEMBER 9, 2018",
+      msg: "這天我們相約一起逛太原夜市，人潮有點擁擠，不知哪來的勇氣，假裝怕妳走散而牽起妳的手，就這麼牽到了現在。\n\n#牽手可是會把女生的心牽走\n#牽就對了\n#哥有練過別亂學\n#警察北北94他",
+    },
+    {
+      photo: EventPhote4,
+      title: "提親",
+      date: "FEBRUARY 28, 2021",
+      msg: "來自四面八方的壓力，想說那明年六月結婚好了，約彼此父母出來認識一下，闡述一下我們的想法，結果怎麼變成今年要結婚Orz，下午直奔婚紗店簽約。\n\n#別輕易讓他們見面\n#提親X\n#逼婚O",
+    },
+    {
+      photo: EventPhote7,
+      title: "結婚登記",
+      date: "MAY 25, 2021",
+      msg: "這感覺真的很奇妙，我竟然結婚了! 也正式迎接我們的同居生活。煮飯、買菜成了我們的日常，而這段時間台灣遭受新冠病毒肆虐，讓我們計畫已久的花蓮行泡湯了(我比較想真的去東部泡湯R~~)。但與你的居家防疫生活也是過得悠遊自在。\n\n#居家防疫\n#全民廚神\n#還我婚假",
+    },
+    {
+      photo: EventPhote5,
+      title: "3rd Anniversary",
+      date: "DECEMBER 9, 2021",
+      msg: "三周年的今天，回想這一年，真的覺得過得好快，也完成了很多事，覺得自己不斷在跳脫舒適圈。\n你也很棒，念碩士班真的辛苦了，為了給妳加油打氣，今天我給你準備了這樣的小驚喜，希望你會喜歡。\n下禮拜就讓我們一起完成今年、也是今生最重要的大事吧！\n\n#補求婚\n#草山夜未眠\n#室友神隊友\n#感謝促成祝福影片的各位",
+    },
+    {
+      photo: EventPhote6,
+      title: "喜宴",
+      date: "DECEMBER 19, 2021",
+      msg: "謝謝各位撥空參與，你們都是我們人生各階段重要的人，有了你們婚禮才能圓滿。也祝褔你我他，身體健康，萬事如意。\n\n#官腔\n#結束後再約\n#tai_and_fish",
+    },
+  ],
+  galleryImageURLs: [
+    "https://i.imgur.com/Wrwezhf.jpg",
+    "https://i.imgur.com/ogcP6DX.jpg",
+    "https://i.imgur.com/7jFmL1W.jpg",
+    "https://i.imgur.com/UJdFwGa.jpg",
+    "https://i.imgur.com/vaxT2EJ.jpg",
+    "https://i.imgur.com/4TQ9Ved.jpg",
+    "https://i.imgur.com/76asfOn.jpg",
+    "https://i.imgur.com/h1nlksS.jpg",
+    "https://i.imgur.com/1LKAHBd.jpg",
+    "https://i.imgur.com/khx3lZK.jpg",
+    "https://i.imgur.com/mDrQ7p2.jpg",
+    "https://i.imgur.com/aeBvfoz.jpg",
+    "https://i.imgur.com/J7Beelo.jpg",
+    "https://i.imgur.com/h88DY2D.jpg",
+    "https://i.imgur.com/2rvzSwl.jpg",
+    "https://i.imgur.com/09R7K7c.jpg",
+    "https://i.imgur.com/in2HP9l.jpg",
+    "https://i.imgur.com/eOmovtc.jpg",
+    "https://i.imgur.com/Eobo5LB.jpg",
+    "https://i.imgur.com/qIHsuxF.jpg",
+    "https://i.imgur.com/PLHvCQ7.jpg",
+    "https://i.imgur.com/DS5jVSD.jpg",
+    "https://i.imgur.com/x9dPWWg.jpg",
+    "https://i.imgur.com/hMeKqUk.jpg",
+    "https://i.imgur.com/k6RsLWo.jpg",
+    "https://i.imgur.com/F2eZOCK.jpg",
+    "https://i.imgur.com/tMPjYTH.jpg",
+    "https://i.imgur.com/OR2uHVl.jpg",
+    "https://i.imgur.com/kohVVSe.jpg",
+    "https://i.imgur.com/NeRbPJY.jpg",
+    "https://i.imgur.com/Jd4nKZw.jpg",
+    "https://i.imgur.com/IdXCDnD.jpg",
+    "https://i.imgur.com/Wv0ORNo.jpg",
+    "https://i.imgur.com/K3WHMqa.jpg",
+    "https://i.imgur.com/LNwoqEt.jpg",
+    "https://i.imgur.com/4TnBBL9.jpg",
+    "https://i.imgur.com/GhXoeFU.jpg",
+    "https://i.imgur.com/W4NhfIb.jpg",
+    "https://i.imgur.com/vbUhass.jpg",
+    "https://i.imgur.com/fJ9jr51.jpg",
+    "https://i.imgur.com/Z9OjXSY.jpg",
+    "https://i.imgur.com/UtL186Z.jpg",
+    "https://i.imgur.com/KnVmj0V.jpg",
+    "https://i.imgur.com/sFpOh0u.jpg",
+    "https://i.imgur.com/jEDcsoy.jpg",
+    "https://i.imgur.com/FZkarJn.jpg",
+    "https://i.imgur.com/DO0QpHU.jpg",
+    "https://i.imgur.com/dpgKDrM.jpg",
+    "https://i.imgur.com/jRUq8hX.jpg",
+    "https://i.imgur.com/6KmtN6Q.jpg",
+    "https://i.imgur.com/dlyw1Te.jpg",
+    "https://i.imgur.com/SyRsaSz.jpg",
+    "https://i.imgur.com/StgRoJ3.jpg",
+    "https://i.imgur.com/W9xN8yG.jpg",
+    "https://i.imgur.com/IAzcrEu.jpg",
+    "https://i.imgur.com/JmC7lSI.jpg",
+    "https://i.imgur.com/j2muCHD.jpg",
+    "https://i.imgur.com/QC4kh8R.jpg",
+    "https://i.imgur.com/O8XZsoE.jpg",
+    "https://i.imgur.com/bqXJKDI.jpg",
+    "https://i.imgur.com/6ztkYrk.jpg",
+    "https://i.imgur.com/JzdCbSA.jpg",
+    "https://i.imgur.com/hyhtlHU.jpg",
+    "https://i.imgur.com/zt00H4J.jpg",
+    "https://i.imgur.com/mmjRvNM.jpg",
+  ],
+};
 
 export default setting;
