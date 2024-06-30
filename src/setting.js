@@ -1,11 +1,11 @@
-import EventPhote0 from "../../img/event0.jpg";
-import EventPhote1 from "../../img/event1.jpg";
-import EventPhote2 from "../../img/event2.jpg";
-import EventPhote3 from "../../img/event3.jpg";
-import EventPhote4 from "../../img/event4.jpg";
-import EventPhote5 from "../../img/event5.jpg";
-import EventPhote6 from "../../img/event6.jpg";
-import EventPhote7 from "../../img/pre_top_bg.jpg";
+import EventPhote0 from "./img/event0.jpg";
+import EventPhote1 from "./img/event1.jpg";
+import EventPhote2 from "./img/event2.jpg";
+import EventPhote3 from "./img/event3.jpg";
+import EventPhote4 from "./img/event4.jpg";
+import EventPhote5 from "./img/event5.jpg";
+import EventPhote6 from "./img/event6.jpg";
+import EventPhote7 from "./img/pre_top_bg.jpg";
 
 const setting = {
   bride: {
