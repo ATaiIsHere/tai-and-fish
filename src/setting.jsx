@@ -6,6 +6,7 @@ import EventPhote4 from "./img/event4.jpg";
 import EventPhote5 from "./img/event5.jpg";
 import EventPhote6 from "./img/event6.jpg";
 import EventPhote7 from "./img/pre_top_bg.jpg";
+import EventPhote8 from "./img/daisy_born.webp";
 
 const setting = {
   bride: {
@@ -66,6 +67,34 @@ const setting = {
       title: "喜宴",
       date: "DECEMBER 19, 2021",
       msg: "謝謝各位撥空參與，你們都是我們人生各階段重要的人，有了你們婚禮才能圓滿。也祝褔你我他，身體健康，萬事如意。\n\n#官腔\n#結束後再約\n#tai_and_fish",
+    },
+    {
+      photo: EventPhote8,
+      title: "知萩出生",
+      date: "SEPTEMBER 16, 2026",
+      msg: <>
+        {"我們的小寶貝終於到來。\n我們很幸運。\n我們知道這一切得來不易。\n\n#女鵝\n"}
+        <a className="story-tag-link" href="https://daisy.atai.dev">
+          <span>#一葉知萩</span>
+          <svg
+            className="story-tag-link-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="13"
+            height="13"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.75"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+            <path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+          </svg>
+        </a>
+      </>,
     },
   ],
   galleryImageURLs: [

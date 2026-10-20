@@ -244,6 +244,32 @@
   white-space: pre-wrap;
 }
 
+.story-tag-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+
+.story-tag-link:hover,
+.story-tag-link:active {
+  color: #555555;
+}
+
+.story-tag-link:focus-visible {
+  outline: 2px solid #a3295c;
+  outline-offset: 3px;
+}
+
+.story-tag-link-icon {
+  flex-shrink: 0;
+}
+
 .mid-block {
   background: #ffffff;
 }
