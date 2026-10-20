@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>ATai &amp; Fish</title>
+  <rect width="64" height="64" rx="14" fill="#f14e95" />
+  <path d="M28 32C24 27 21 20 15 20C7 20 7 29 13 32C7 35 7 44 15 44C21 44 24 37 28 32Z" fill="#fff" />
+  <path d="M25 32C33 17 47 17 56 32C47 47 33 47 25 32Z" fill="#fff" />
+  <circle cx="47" cy="30" r="2" fill="#f14e95" />
+</svg>
